@@ -1,0 +1,5 @@
+env.dist
+docker-compose*
+
+/docker
+/config
