@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  aws:
+    image: 'diegodisant/busyboxk8s:latest'
+    volumes:
+      ./config/aws/config:~/home/.aws/config
+      ./credentials/aws/credentials:~/home/.aws/credentials
+    entrypoint: aws
+
+  kubectl:
+    image: 'diegodisant/busyboxk8s:latest'
+    volumes:
+      ./config/aws/config:~/home/.aws/config
+      ./credentials/aws/credentials:~/home/.aws/credentials
+    entrypoint: kubectl

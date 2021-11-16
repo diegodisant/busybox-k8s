@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  busybox:
+    image: 'diegodisant/busyboxk8s:latest'
+    build:
+      context: .
+      dockerfile: ./docker/busybox/Dockerfile
+    container_name: busybox_k8s

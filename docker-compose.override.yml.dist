@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  busyboxk8s:
+    environment:
+      BUSYBOX_HOME: ${BUSYBOX_HOME}
+      BUSYBOX_ENV_FILE: ${BUSYBOX_ENV_FILE}
+      NAMESPACE_DEFAULT: ${NAMESPACE_DEFAULT}
+    volumes:
+      ./config/aws/config:~/home/.aws/config
+      ./credentials/aws/credentials:~/home/.aws/credentials
