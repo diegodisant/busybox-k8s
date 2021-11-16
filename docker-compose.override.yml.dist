@@ -7,5 +7,5 @@ services:
       BUSYBOX_ENV_FILE: ${BUSYBOX_ENV_FILE}
       NAMESPACE_DEFAULT: ${NAMESPACE_DEFAULT}
     volumes:
-      ./config/aws/config:~/home/.aws/config
-      ./credentials/aws/credentials:~/home/.aws/credentials
+      - ./config/aws/config:~/home/.aws/config
+      - ./credentials/aws/credentials:~/home/.aws/credentials
