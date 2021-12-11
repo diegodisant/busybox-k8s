@@ -6,6 +6,7 @@ COPY . .
 
 RUN mkdir /root/.aws
 
+COPY ./config/profile/.profile /root/.profile
 COPY ./config/aws/config /root/.aws/config
 COPY ./config/aws/credentials /root/.aws/credentials
 
