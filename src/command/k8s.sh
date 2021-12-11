@@ -3,23 +3,23 @@
 source '/busyboxk8s/src/load-deps.sh'
 
 set_country_mx() {
-  export NAMESPACE_DEFAULT=${NAMESPACE_PREFIX}-${COUNTRY_MX}
+  export COUNTRY_DEFAULT=${COUNTRY_MX}
 }
 
 set_country_co() {
-  export NAMESPACE_DEFAULT=${NAMESPACE_PREFIX}-${COUNTRY_CO}
+  export COUNTRY_DEFAULT=${COUNTRY_CO}
 }
 
 set_country_pe() {
-  export NAMESPACE_DEFAULT=${NAMESPACE_PREFIX}-${COUNTRY_PE}
+  export COUNTRY_DEFAULT=${COUNTRY_PE}
 }
 
 set_country_cl() {
-  export NAMESPACE_DEFAULT=${NAMESPACE_PREFIX}-${COUNTRY_CL}
+  export COUNTRY_DEFAULT=${COUNTRY_CL}
 }
 
 set_country_ar() {
-  export NAMESPACE_DEFAULT=${NAMESPACE_PREFIX}-${COUNTRY_AR}
+  export COUNTRY_DEFAULT=${COUNTRY_CL}
 }
 
 alias k8s-cluster3-staging="aws eks update-kubeconfig --region us-east-1 --name sc-cluster-linio3-staging"
