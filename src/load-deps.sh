@@ -1,5 +1,5 @@
 #!/bin/sh
 
-source "${BUSYBOX_HOME}/core/envdecode.sh"
-source "${BUSYBOX_HOME}/core/colors.sh"
-source "${BUSYBOX_HOME}/core/logger.sh"
+source "/busyboxk8s/src/core/envdecode.sh"
+source "/busyboxk8s/src/core/colors.sh"
+source "/busyboxk8s/src/core/logger.sh"
