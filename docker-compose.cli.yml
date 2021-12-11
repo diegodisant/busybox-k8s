@@ -7,6 +7,8 @@ services:
       ./config/aws/config:~/home/.aws/config
       ./credentials/aws/credentials:~/home/.aws/credentials
     entrypoint: aws
+    network_mode: host
+    container_name: busybox_cli_aws
 
   kubectl:
     image: 'diegodisant/busyboxk8s:latest'
@@ -14,3 +16,5 @@ services:
       ./config/aws/config:~/home/.aws/config
       ./credentials/aws/credentials:~/home/.aws/credentials
     entrypoint: kubectl
+    network_mode: host
+    container_name: busybox_cli_kubectl

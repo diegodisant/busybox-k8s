@@ -5,8 +5,17 @@ services:
     environment:
       BUSYBOX_HOME: ${BUSYBOX_HOME}
       BUSYBOX_ENV_FILE: ${BUSYBOX_ENV_FILE}
+      COUNTRY_MX: ${COUNTRY_MX}
+      COUNTRY_CO: ${COUNTRY_CO}
+      COUNTRY_PE: ${COUNTRY_PE}
+      COUNTRY_CL: ${COUNTRY_CL}
+      COUNTRY_AR: ${COUNTRY_AR}
+      COUNTRY_DEFAULT: ${COUNTRY_DEFAULT}
+      NAMESPACE_PREFIX: ${NAMESPACE_PREFIX}
       NAMESPACE_DEFAULT: ${NAMESPACE_DEFAULT}
+    network_mode: host
     volumes:
       - ./config/aws/config:/root/.aws/config
       - ./config/aws/credentials:/root/.aws/credentials
+      - ./config/profile/.profile:/root/.profile
       - .:/busyboxk8s
