@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 if [ -f "${BUSYBOX_ENV_FILE}" ]; then
   export $(egrep -v '^#' ${BUSYBOX_ENV_FILE} | xargs)

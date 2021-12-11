@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 export STYLE_TERMINATOR="\e[0m"
 

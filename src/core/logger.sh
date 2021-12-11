@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 function has_message() {
   if [ $# -eq 0]; then
